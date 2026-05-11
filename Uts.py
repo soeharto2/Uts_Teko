@@ -1,8 +1,8 @@
 import re
 
-# =========================
+
 # AST NODE
-# =========================
+
 
 class AST:
     pass
@@ -25,9 +25,9 @@ class ParserError(Exception):
     pass
 
 
-# =========================
+
 # MINI COMPILER
-# =========================
+
 
 class MiniCompiler:
     def __init__(self, source, env):
@@ -92,9 +92,9 @@ class MiniCompiler:
 
         raise ParserError(f"Unexpected token: {token}")
 
-    # =========================
+  
     # TUGAS 2
-    # =========================
+    
     def power(self):
 
         node = self.factor()
@@ -111,9 +111,9 @@ class MiniCompiler:
 
         return node
 
-    # =========================
+    
     # TUGAS 3
-    # =========================
+    
     def term(self):
 
         # sekarang term memakai power()
@@ -147,9 +147,9 @@ class MiniCompiler:
 
         return node
 
-    # =========================
+    
     # TAC GENERATOR
-    # =========================
+    
     def generate_tac(self, node):
 
         if isinstance(node, Num):
@@ -169,9 +169,9 @@ class MiniCompiler:
         return temp_name
 
 
-# =========================
+
 # UJI COBA
-# =========================
+
 
 source_code = "a ^ 2 + b * c"
 symbol_table = {
