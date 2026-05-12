@@ -34,7 +34,7 @@ expr   -> term
 term   -> power
 power  -> factor
 
-Semakin ke bawah, semakin tinggi prioritas operatornya 🚨
+Semakin ke bawah, semakin tinggi prioritas operatornya 
 
 2. Apa yang terjadi jika variabel `z` tidak ada di `symbol_table`?
 
